@@ -1,17 +1,15 @@
 #pragma once
-#include "Persona.hpp"
 #include <string>
 using namespace std;
 
-
-class Paciente : public Persona 
+class Persona 
 {
-private:
-    string id;
-    string servicio;
-public:
-    Paciente(string id, string nombre, int edad, string servicio);
-    string getId();
-    string getServicio();
-    ~Paciente();
+    protected:
+        string nombre;
+        int edad;
+    public:
+        Persona(string nombre, int edad);
+        string getNombre();
+        int getEdad();
+        ~Persona();
 };

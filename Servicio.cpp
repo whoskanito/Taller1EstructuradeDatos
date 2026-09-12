@@ -6,7 +6,7 @@ Servicio::Servicio(string nombre)
     this->pacientes = new List<Paciente*>();
 }
 
-String Servicio::getNombre() { return this->nombre; }
+string Servicio::getNombre() { return this->nombre; }
 void Servicio::agregarPaciente(Paciente* p) { this->pacientes->insertLast(p); }
 List <Paciente*>* Servicio::getPacientes() { return this->pacientes; }
 Servicio::~Servicio() { delete this->pacientes; }

@@ -5,7 +5,7 @@ template <class T>
 class List
 {
     private:
-        Node <T> start;
+        Node<T>* start;
     
     public:
         List()
