@@ -7,16 +7,42 @@
 <strong>Usuario:</strong> whoskanito
 </p>
 
-### Estructura del Proyecto  
+## Estructura del Proyecto  
 
- El proyecto cuenta las siguientes Clases:
+El proyecto cuenta las siguientes Clases:
 
-## Main
+### Main
 Clase principal de la aplicación. Contiene el método main, encargado de inicializar el sistema.
 
+### Node
+Estructura de dato que sirve como eslabón de una cadena, guarda un dato y un puntero que apunta al siguiente eslabón, utiliza una plantilla "T" para guardar cualquier tipo de dato.
 
-### Instrucciones de ejecución
+### List, Queue, Stack
+Implementación de las estructura de datos de forma manual.
+
+### Persona, Paciente
+Clase padre e hija que representan pacientes dentro del hospital.
+
+### Servicio
+Lista de servicios del hospital la cual lleva su propia lista enlazada de pacientes.
+
+
+## Instrucciones de ejecución
   
-1. Clonar o descargar el repositorio desde github.
-2. Abrir proyecto en vscode.
-3. Ejecutar la clase "Main.cpp"
+### Forma N°1:
+
+1. Clonar o descargar el repositorio desde GitHub.
+2. Abrir cmd y utilizar comando "cd" para abrir el directorio del proyecto. Ej: "cd C:\Users\Asus\\...\Taller1EstructuraDeDatos".
+3. Ejecutar proyecto escribiendo ".\hospital" en la terminal.
+
+### Forma N°2:
+1. Clonar o descargar el repositorio desde GitHub.
+2. Abrir carpeta del proyecto desde VSCode y abrir su terminal nativa.
+3. Ejecutar proyecto escribiendo ".\hospital" en la terminal.
+
+### Forma N°3:
+1. Clonar o descargar el repositorio desde GitHub.
+2. Ejecutar el archivo "hospital.exe".
+
+## Información adicional
+Para modificar el archivo que contiene a los pacientes para realizar distintas pruebas, basta con modificar el archivo "pacientes.txt".

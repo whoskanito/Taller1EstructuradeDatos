@@ -51,17 +51,34 @@ class Queue
             {
                 return;
             }
-
             Node<T>* NodoABorrar = this->inicio;
-
             this->inicio = this->inicio->getNext();
 
             if (this->inicio == nullptr) 
             {
                 this->fin = nullptr;
             }
-
             delete NodoABorrar;
+        }
+
+        void mostrarYContar()
+        {
+            if (this->isEmpty()) 
+            {
+                cout << "No hay pacientes en espera" << endl;
+                return;
+            }
+
+            Node<T>* cursor = this->inicio;
+            int contador = 1;
+            while (cursor != nullptr)
+            {
+                Paciente* p = cursor->getValue();
+                cout << contador << ". " << p->getId() << " - " << p->getNombre() << endl;
+                cursor = cursor->getNext();
+                contador++;
+            }
+
         }
 
         ~Queue() 
